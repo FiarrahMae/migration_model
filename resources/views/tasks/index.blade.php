@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasks</title>
-    @vite('resources/css/app.css')
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/output.css" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen py-10">
@@ -13,7 +13,7 @@
     <div class="max-w-3xl mx-auto bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/40">
 
         <h1 class="text-2xl font-semibold text-gray-700 text-center mb-6">
-            📋 Task List
+             Task List
         </h1>
 
         <!-- Success Message -->

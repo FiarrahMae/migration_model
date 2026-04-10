@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Task</title>
-    @vite('resources/css/app.css')
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/output.css" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex items-center justify-center min-h-screen">
@@ -13,7 +13,7 @@
     <div class="bg-white/80 backdrop-blur-md shadow-xl rounded-2xl p-8 w-full max-w-md border border-white/40">
         
         <h1 class="text-2xl font-semibold text-gray-700 mb-6 text-center">
-            ✨ Create Task
+             Create Task
         </h1>
 
         <form action="/tasks" method="POST" class="space-y-5">

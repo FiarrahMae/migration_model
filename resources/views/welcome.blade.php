@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>Laravel</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <h1 class="text-3xl text-blue-600">Tailwind Works!</h1>
+    <h1 class="text-3xl text-pink-600">Tailwind Works!</h1>
 </body>
 </html>

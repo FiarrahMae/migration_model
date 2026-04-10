@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Task</title>
-    @vite('resources/css/app.css')
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/output.css" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-gradient-to-br from-yellow-100 via-pink-100 to-purple-100 flex items-center justify-center min-h-screen">
@@ -13,10 +13,10 @@
     <div class="bg-white/80 backdrop-blur-md shadow-xl rounded-2xl p-8 w-full max-w-md border border-white/40">
         
         <h1 class="text-2xl font-semibold text-gray-700 mb-6 text-center">
-            ✏️ Edit Task
+             Edit Task
         </h1>
 
-        <form action="{{ route('tasks.update', $task) }}" method="POST" class="space-y-5">
+        <form action="/tasks/{{ $task->id }}" method="POST" method="POST" class="space-y-5">
             @csrf
             @method('PUT')
 
